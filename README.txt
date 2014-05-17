@@ -1,1 +1,1 @@
-Esse repositório contém os arquivos do Lab 1 - Sistemas da Informação 1 - Aluno Gleyser B. Guimarães - Computação UFCG
+Alterando 1 - Esse repositório contém os arquivos do Lab 1 - Sistemas da Informação 1 - Aluno Gleyser B. Guimarães - Computação UFCG
