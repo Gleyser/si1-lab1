@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	
+    <meta charset="utf-8">
+    <title>Obrigado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="javascript/jquery.js"></script>
+	<!-- meu próprio css e javascript -->
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="javascript/exemplo.js"></script>
+	
+	   <SCRIPT TYPE=”text/javascript”>
+<!–
+function submitenter(myfield,e)
+{
+var keycode;
+if (window.event) keycode = window.event.keyCode;
+else if (e) keycode = e.which;
+else return true;
+
+if (keycode == 13)
+{
+myfield.form.submit();
+return false;
+}
+else
+return true;
+}
+//–>
+</SCRIPT>
+		
+   
+    
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    
+    
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+      .centralizar {
+				display: block;
+				margin-left: auto;
+				margin-right: auto
+	  }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+	<img class="centralizar " src="logo.png" /> 
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li class="active"><a href="obrigado.html">Obrigado!</a></li>
+        </ul>
+        <h3 class="muted">Sistemas de Informação I</h3>
+      </div>
+		
+      <hr>
+    <!-- div adicionar tema -->      
+    <form class="form-horizontal">
+          <h2 style="text-align:center;">Temas a Aprender e Temas Aprendidos</h2>
+         
+         
+           <div class="control-group">
+          
+   <!-- div adicionar série -->
+		<div id="addSerie" class="well col-sm-12"> 
+			<fieldset>
+				<legend> <i> Adicionar Tema a ser aprendido </i> </legend>
+
+				<label> Nome: </label>
+				<input type="text" id="nome" class="form-control" value="" required="required">
+				<button type="button" onclick="adicionaSerie()" class="btn btn-primary">OK</button>
+			</fieldset>
+		</div>
+		
+	<!-- adicionando na lista a serem aprendidos -->
+		<div id="addSerie" class="well col-sm-12"> 
+			<fieldset>
+				<legend> <i> Adicionar Tema Aprendido </i> </legend>
+
+				<label> Nome: </label>
+				<input type="text" id="nome" class="form-control" value="" required="required">
+				<button type="button" onclick="adicionaSerie()" class="btn btn-primary">OK</button>
+			</fieldset>
+		</div>
+
+		<!-- div remover tema -->
+		<div id="remSerie" class="well col-sm-12"> 
+			<fieldset>
+				<legend> <i> Remover Tema </i> </legend>
+
+				<label> Nome: </label>
+				<input type="text" id="nomeRem" class="form-control" value="" required="required">
+
+				<button type="button" onclick="removerSerie()" class="btn btn-primary">OK</button>
+			</fieldset>
+		</div>
+		
+		</div>
+
+		<!-- div temas por aprender -->
+		<div id="series" class="col-sm-7"> 
+			<h4 class="text-center">Temas a Aprender</h4>
+		</div> 
+    	<hr>
+    	<!-- div temas aprendidos -->
+		<div id="series" class="col-sm-7"> 
+			<h4 class="text-center">Temas Aprendidos</h4>
+		</div> 
+   
+ 
+    
+ 
+   
+   
+ </div>
+  </body>
+</html>
