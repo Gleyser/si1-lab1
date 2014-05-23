@@ -10,32 +10,10 @@
     <script src="javascript/jquery.js"></script>
 	<!-- meu próprio css e javascript -->
 	<link href="css/styles.css" rel="stylesheet">
-	<script src="javascript/exemplo.js"></script>
+	<script src="javascript/meuscript.js"></script>
 	
-	   <SCRIPT TYPE=”text/javascript”>
-<!–
-function submitenter(myfield,e)
-{
-var keycode;
-if (window.event) keycode = window.event.keyCode;
-else if (e) keycode = e.which;
-else return true;
-
-if (keycode == 13)
-{
-myfield.form.submit();
-return false;
-}
-else
-return true;
-}
-//–>
-</SCRIPT>
-		
-   
     
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    
     
     <style type="text/css">
       body {
@@ -80,12 +58,7 @@ return true;
 	  }
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
-
+   
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
@@ -100,40 +73,40 @@ return true;
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="cadastro.html">Cadastro</a></li>
-          <li class="active"><a href="obrigado.html">Obrigado!</a></li>
+          <li><a href="Index.html">Início</a></li>
+          <li><a href="Cadastro.html">Cadastro</a></li>
+          <li class="active"><a href="Obrigado.html">Obrigado!</a></li>
         </ul>
         <h3 class="muted">Sistemas de Informação I</h3>
       </div>
 		
       <hr>
-    <!-- div adicionar tema -->      
+       
     <form class="form-horizontal">
           <h2 style="text-align:center;">Temas a Aprender e Temas Aprendidos</h2>
          
          
            <div class="control-group">
           
-   <!-- div adicionar série -->
-		<div id="addSerie" class="well col-sm-12"> 
+
+		<div id="addTemaA" class="well col-sm-12"> 
 			<fieldset>
 				<legend> <i> Adicionar Tema a ser aprendido </i> </legend>
 
 				<label> Nome: </label>
-				<input type="text" id="nome" class="form-control" value="" required="required">
-				<button type="button" onclick="adicionaSerie()" class="btn btn-primary">OK</button>
+				<input type="text" id="nome"  value="" required="required" onkeypress="adicionaTema()">
+				
 			</fieldset>
 		</div>
 		
-	<!-- adicionando na lista a serem aprendidos -->
-		<div id="addSerie" class="well col-sm-12"> 
+
+		<div id="addTemaB" class="well col-sm-12"> 
 			<fieldset>
 				<legend> <i> Adicionar Tema Aprendido </i> </legend>
 
 				<label> Nome: </label>
-				<input type="text" id="nome" class="form-control" value="" required="required">
-				<button type="button" onclick="adicionaSerie()" class="btn btn-primary">OK</button>
+				<input type="text" id="nome"  value="" required="required">
+				
 			</fieldset>
 		</div>
 
@@ -143,21 +116,20 @@ return true;
 				<legend> <i> Remover Tema </i> </legend>
 
 				<label> Nome: </label>
-				<input type="text" id="nomeRem" class="form-control" value="" required="required">
-
-				<button type="button" onclick="removerSerie()" class="btn btn-primary">OK</button>
+				<input type="text" id="nomeRem" value="" required="required">
+				
 			</fieldset>
 		</div>
 		
 		</div>
 
 		<!-- div temas por aprender -->
-		<div id="series" class="col-sm-7"> 
+		<div id="te" class="col-sm-7"> 
 			<h4 class="text-center">Temas a Aprender</h4>
 		</div> 
     	<hr>
     	<!-- div temas aprendidos -->
-		<div id="series" class="col-sm-7"> 
+		<div id="temasAprendidos" class="col-sm-7"> 
 			<h4 class="text-center">Temas Aprendidos</h4>
 		</div> 
    

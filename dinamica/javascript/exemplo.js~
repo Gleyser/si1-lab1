@@ -10,7 +10,10 @@
 		$divSeriado = $('#' + $id);
 		$divSeriado.append("<h3>" + $nome);
 		$divSeriado.append("<br /> ");
-		
+		$divSeriado.append("<strong> Descrição: </strong>" + $descricao);
+		$divSeriado.append("<br /> ");
+		$divSeriado.append("<strong> Lançamento: </strong>" + $lancamento);
+		$divSeriado.append("<br /> ");
 
 		limpaForms();
 		$divSeriado.hide().fadeIn();
