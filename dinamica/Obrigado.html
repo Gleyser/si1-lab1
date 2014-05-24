@@ -11,8 +11,7 @@
 	<!-- meu próprio css e javascript -->
 	<link href="css/styles.css" rel="stylesheet">
 	<script src="javascript/meuscript.js"></script>
-	
-    
+	   
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     
     <style type="text/css">
@@ -89,12 +88,15 @@
            <div class="control-group">
           
 
+
+
 		<div id="addTemaA" class="well col-sm-12"> 
 			<fieldset>
-				<legend> <i> Adicionar Tema a ser aprendido </i> </legend>
-
-				<label> Nome: </label>
-				<input type="text" id="nome"  value="" required="required" onkeypress="adicionaTema()">
+				<legend> <i> Adicionar Tema que irei aprender </i> </legend>
+			
+				<input type="text" id="nome" class="form-control" required="required"
+				size="300" maxlength="60" placeholder="Escreva aqui o tema a aprender">
+				<button type="button" onclick="inserir()" class="btn btn-lg btn-success">Inserir</button>
 				
 			</fieldset>
 		</div>
@@ -104,8 +106,9 @@
 			<fieldset>
 				<legend> <i> Adicionar Tema Aprendido </i> </legend>
 
-				<label> Nome: </label>
-				<input type="text" id="nome"  value="" required="required">
+				
+				<input type="text" class="form-control" size="300" maxlength="60"
+					placeholder="Escreva aqui o tema aprendido" onkeypress="enter(event)" id="temaAprendido"> 
 				
 			</fieldset>
 		</div>
@@ -115,8 +118,9 @@
 			<fieldset>
 				<legend> <i> Remover Tema </i> </legend>
 
-				<label> Nome: </label>
-				<input type="text" id="nomeRem" value="" required="required">
+				
+				<input type="text" class="form-control" size="300" maxlength="60"
+					placeholder="Escreva para remover" onkeypress="enter(event)" id="removerTema"> 
 				
 			</fieldset>
 		</div>
@@ -125,18 +129,18 @@
 
 		<!-- div temas por aprender -->
 		<div id="te" class="col-sm-7"> 
-			<h4 class="text-center">Temas a Aprender</h4>
+			<h4 class="text-center">Temas que pretendo aprender:</h4>
+			 <select name="Aprender" id="Aprender"  size="10" style="width:700px" multiple="multiple">
+			 </select>
 		</div> 
     	<hr>
     	<!-- div temas aprendidos -->
 		<div id="temasAprendidos" class="col-sm-7"> 
-			<h4 class="text-center">Temas Aprendidos</h4>
+			<h4 class="text-center">Temas que já aprendi:</h4>
+			 <select name="Aprendido" id="Aprendido" size="10" style="width:700px" multiple="multiple">
+			 </select>
 		</div> 
-   
- 
     
- 
-   
    
  </div>
   </body>
